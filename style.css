@@ -5,6 +5,8 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --azul-hover: #4595f7;
+    --cinza-hover: #adabab44;
 
     --fonte-principal: "Inter", serif;
 }
@@ -34,9 +36,17 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa {
+    margin: 0 6em;
+}
+
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
 }
 
 .container__botao {
@@ -46,12 +56,21 @@ body {
     padding: 1em;
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--azul-hover);
 }
 
 .botao__secundario {
     background-color: transparent;
     border: solid 1px var(--cinza-secundario);
     color: var(--cinza-secundario);
+}
+
+.botao__secundario:hover {
+    background-color: var(--cinza-hover);
 }
 
 .container__aviso {
